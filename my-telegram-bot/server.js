@@ -7,7 +7,7 @@ const app = express();
 
 // Додати підтримку CORS
 const corsOptions = {
-    origin: ['https://papabatosha95.github.io', 'http://127.0.0.1:5500'], // без слеша в кінці
+    origin: ['https://papabatosha95.github.io', 'http://127.0.0.1:5500', 'https://my-telegram-bot-papabatosha.herokuapp.com'], // без слеша в кінці
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type'],
 };

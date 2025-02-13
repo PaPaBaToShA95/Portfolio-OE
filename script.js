@@ -81,7 +81,7 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
     const name = document.querySelector('input[name="name"]').value;
     const text = document.querySelector('input[name="text"]').value;
 
-    await fetch("https://my-telegram-bot-papabatosha.herokuapp.com/send-message", {
+    await fetch("https://my-telegram-bot-papabatosha-fcf76aa62f19.herokuapp.com/send-message", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, text }),
@@ -95,4 +95,3 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
         })
         .catch(error => console.error('Error:', error));
 });
-//comit
