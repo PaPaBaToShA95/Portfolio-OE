@@ -81,7 +81,7 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
     const name = document.querySelector('input[name="name"]').value;
     const text = document.querySelector('input[name="text"]').value;
 
-    await fetch("https://твій-сервер/send-message", {
+    await fetch("https://papabatosha95.github.io/send-message", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, text }),
