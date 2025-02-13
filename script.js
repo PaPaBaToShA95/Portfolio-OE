@@ -74,3 +74,24 @@ lang.addEventListener('change', () => {
         }
     }
 });
+
+document.getElementById("contactForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const name = document.querySelector('input[name="name"]').value;
+    const text = document.querySelector('input[name="text"]').value;
+
+    await fetch("https://твій-сервер/send-message", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, text }),
+    })
+        .then(response => {
+            if (response.ok) {
+                alert('Повідомлення надіслано!');
+            } else {
+                alert('Помилка при відправці повідомлення.');
+            }
+        })
+        .catch(error => console.error('Error:', error));
+});
