@@ -330,6 +330,10 @@ input:checked+.slider:before {
 
 .img__p {
     width: 400px;
+    height: auto;
+}
+.img__p2 {
+    width: auto;
     height: 400px;
 }
 
