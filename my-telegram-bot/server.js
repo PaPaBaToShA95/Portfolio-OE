@@ -7,10 +7,12 @@ const app = express();
 
 // Додати підтримку CORS
 const corsOptions = {
-    origin: ['https://papabatosha95.github.io/', 'http://127.0.0.1:5500/index.html'],
+    origin: ['https://papabatosha95.github.io', 'http://127.0.0.1:5500'], // без слеша в кінці
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type'],
 };
+
+// Застосовуємо CORS на всіх запитах
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
