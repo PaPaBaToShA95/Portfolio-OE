@@ -323,11 +323,29 @@
                     <div class="propose__title">Any Propositions?</div>
                     <div class="propose__discript">Complete the form below and let's have a talk on your project!</div>
                 </div>
-                <div class="propose__cont">
-                    <input type="text" class="propose__input" placeholder="Name" />
-                    <input type="tel" class="propose__input" placeholder="Your Number" />
-                    <a href="#" class="btn__propose">Contact</a>
-                </div>
+                <form class="propose__cont" id="contactForm">
+                    <input type="text" name="name" class="propose__input" placeholder="Name" />
+                    <input type="tel" name="text" class="propose__input" placeholder="Your Number" />
+                    <button type="submit" class="btn__propose">Contact</button>
+                </form>
+
+                </form>
+                <script>
+                    document.getElementById("contactForm").addEventListener("submit", async (e) => {e.preventDefault();
+
+        const name = document.querySelector('input[name="name"]').value;
+        const text = document.querySelector('input[name="text"]').value;
+                            await fetch("https://papabatoshaserver-2e798d68da19.herokuapp.com/send-message",
+                                {
+                                    method: "POST",
+                                    headers: { "Content-Type": "application/json" },
+                                    body: JSON.stringify({ name, text }),
+                                }
+                            );
+                            //   window.location.href =
+                            //     "https://papabatosha95.github.io/Portfolio-OE/";
+                        });
+                </script>
             </div>
             <div class="footer">
                 <div class="footer__title" id="OE">Oleksiy Ermantraut</div>
