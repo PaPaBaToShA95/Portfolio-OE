@@ -11,9 +11,9 @@
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
         rel="stylesheet">
     <script src="script.js" defer></script>
-  <link rel="icon" href="img/logo.svg" type="image/x-icon" />
+    <link rel="icon" href="img/logo.svg" type="image/x-icon" />
 
-    <title>Portfolio OE</title>
+    <title></title>
 </head>
 
 <body>
@@ -26,19 +26,19 @@
             <div class="menu__hd">
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a href="index.html" class="menu__link">About Me</a>
+                        <a href="index.html" id="am" class="menu__link">About Me</a>
                     </li>
                     <li class="menu__item">
-                        <a href="index.html" class="menu__link">Skills</a>
+                        <a href="index.html" id="sk" class="menu__link">Skills</a>
                     </li>
                     <li class="menu__item">
-                        <a href="index.html" class="menu__link">Project</a>
+                        <a href="index.html" id="pr" class="menu__link">Project</a>
                     </li>
                     <li class="menu__item">
-                        <a href="index.html" class="menu__link">Experience</a>
+                        <a href="index.html" id="exp" class="menu__link">Experience</a>
                     </li>
                     <li class="menu__item">
-                        <a href="index.html" class="menu__link">Events</a>
+                        <a href="index.html" id="ac" class="menu__link">Achievements</a>
                     </li>
                 </ul>
                 <ul class="menu__socUL">
@@ -57,7 +57,7 @@
                 </ul>
                 <span class="menu__link">EN</span>
                 <label class="switch">
-                    <input type="checkbox">
+                    <input id="lang" type="checkbox">
                     <span class="slider round"></span>
                 </label>
                 <span class="menu__link">UA</span>
@@ -67,7 +67,7 @@
     <main class="main">
         <section class="about__me ">
             <div class="aboutme__div container">
-                <div class="aboutme__title">
+                <div id="OE" class="aboutme__title">
                     Oleksiy Ermantraut
                 </div>
                 <div class="aboutme__description">
@@ -163,31 +163,46 @@
                 </div>
                 <div class="project__description">
                     <div class="projectm__title">Tik-Tak-Toe</div>
-                    <div class="project__text">This is a classic Tic-Tac-Toe web game built using HTML, CSS, and JavaScript. The project features a clean and responsive design with interactive gameplay, allowing two players to take turns. The game tracks moves, checks for wins, and resets for new rounds. A great example of applying basic front-end development skills to create a fun and engaging user experience.</div>
-                    <div class="btn__div"><a href="#" class="btn__cv">View Project</a><a href="https://papabatosha95.github.io/TTT/" class="btn__cv">Try</a></div>
+                    <div class="project__text">This is a classic Tic-Tac-Toe web game built using HTML, CSS, and
+                        JavaScript. The project features a clean and responsive design with interactive gameplay,
+                        allowing two players to take turns. The game tracks moves, checks for wins, and resets for new
+                        rounds. A great example of applying basic front-end development skills to create a fun and
+                        engaging user experience.</div>
+                    <div class="btn__div"><a href="#" class="btn__cv">View Project</a><a
+                            href="https://papabatosha95.github.io/TTT/" class="btn__cv">Try</a></div>
                 </div>
             </div>
-                <div class="projects__secondline">
-                    <div class="project__description2">
+            <div class="projects__secondline">
+                <div class="project__description2">
                     <div class="projectm__title">Whirl</div>
-                    <div class="project__text">"Whirl" is a website I developed as part of my exam project, using HTML, CSS, and JavaScript. The site features smooth animations, responsive design, and interactive elements. This project was highly praised for its level of complexity and quality, showcasing my strong grasp of front-end development at my current stage of learning.</div>
-                    <div class="btn__div2"><a href="#" class="btn__cv2">View Project</a><a href="https://papabatosha95.github.io/Whirl/" class="btn__cv2">Look</a></div>
+                    <div class="project__text">"Whirl" is a website I developed as part of my exam project, using HTML,
+                        CSS, and JavaScript. The site features smooth animations, responsive design, and interactive
+                        elements. This project was highly praised for its level of complexity and quality, showcasing my
+                        strong grasp of front-end development at my current stage of learning.</div>
+                    <div class="btn__div2"><a href="#" class="btn__cv2">View Project</a><a
+                            href="https://papabatosha95.github.io/Whirl/" class="btn__cv2">Look</a></div>
                 </div>
-                    <div class="project__img2">
+                <div class="project__img2">
                     <img class="img__p" src="img/whirl.png">
                 </div>
-                
-                </div>
-                <div class="projects__thirdline">
-                    <div class="project__img">
+
+            </div>
+            <div class="projects__thirdline">
+                <div class="project__img">
                     <img class="img__p2" src="img/calendar.png">
                 </div>
                 <div class="project__description">
                     <div class="projectm__title">The Weight Loss Calendar</div>
-                    <div class="project__text">The Weight Loss Calendar is a web application designed to help users track their weight loss journey over time. Built using HTML, CSS, and JavaScript, the app allows users to log their weight, set goals, and view progress on a calendar interface. The intuitive design makes it easy to use, and the app helps users stay motivated by visualizing their progress. This project showcases practical skills in front-end development and was well-received for its simplicity and effectiveness in delivering a useful tool.</div>
-                    <div class="btn__div3"><a href="#" class="btn__cv">View Project</a><a href="https://papabatosha95.github.io/kalendar/" class="btn__cv">Try</a></div>
+                    <div class="project__text">The Weight Loss Calendar is a web application designed to help users
+                        track their weight loss journey over time. Built using HTML, CSS, and JavaScript, the app allows
+                        users to log their weight, set goals, and view progress on a calendar interface. The intuitive
+                        design makes it easy to use, and the app helps users stay motivated by visualizing their
+                        progress. This project showcases practical skills in front-end development and was well-received
+                        for its simplicity and effectiveness in delivering a useful tool.</div>
+                    <div class="btn__div3"><a href="#" class="btn__cv">View Project</a><a
+                            href="https://papabatosha95.github.io/kalendar/" class="btn__cv">Try</a></div>
                 </div>
-                </div>
+            </div>
         </section>
         <section class="interesting">
             <div class="interest">
@@ -195,7 +210,8 @@
                     Interested in working together?
                 </div>
                 <div class="interest__description">
-                    You can trust your project in my expert hands. I'm always eager to do something nice and complicated. Let's discuss all the features in a private conversation. 
+                    You can trust your project in my expert hands. I'm always eager to do something nice and
+                    complicated. Let's discuss all the features in a private conversation.
                 </div>
                 <div class="interest__btn">
                     <a href="#" class="btn__inter">Contact Me</a>
@@ -212,7 +228,8 @@
                         </div>
                         <div class="item__description">
                             <p class="item__title">KRMK NAU</p>
-                            <p class="item__text">Entered the Kyiv Radiomechanic College for the course Design, production and technical service of radio technical devices</p>
+                            <p class="item__text">Entered the Kyiv Radiomechanic College for the course Design,
+                                production and technical service of radio technical devices</p>
                         </div>
                     </div>
                     <div class="experience__item">
@@ -230,7 +247,8 @@
                         </div>
                         <div class="item__description">
                             <p class="item__title">NAU</p>
-                            <p class="item__text">I entered the National Aviation University in the City of Kyiv and continued to study in my specialty</p>
+                            <p class="item__text">I entered the National Aviation University in the City of Kyiv and
+                                continued to study in my specialty</p>
                         </div>
                     </div>
                     <div class="experience__item">
@@ -239,7 +257,8 @@
                         </div>
                         <div class="item__description">
                             <p class="item__title">NAU</p>
-                            <p class="item__text">I graduated from NAU and went to work at a service center repairing mobile equipment</p>
+                            <p class="item__text">I graduated from NAU and went to work at a service center repairing
+                                mobile equipment</p>
                         </div>
                     </div>
                     <div class="experience__item">
@@ -248,7 +267,8 @@
                         </div>
                         <div class="item__description">
                             <p class="item__title">AFoU</p>
-                            <p class="item__text">I left my job as a master in a service center to join the ranks of the Armed Forces of Ukraine</p>
+                            <p class="item__text">I left my job as a master in a service center to join the ranks of the
+                                Armed Forces of Ukraine</p>
                         </div>
                     </div>
                     <div class="experience__item">
@@ -266,30 +286,94 @@
         <section class="achievements">
             <div class="achievement">Achievements</div>
             <div class="achi__grid">
-            <div class="achi">
-                <div class="achi__img"><img class="img__achi" src="img/java-start.webp"> </div>
-                <div class="achi__title">Java Start</div>
-                <div class="achi_discript">I completed a sprint course on JAVA by completing all the homework for 100 points and received a great baggage of basic knowledge of the JAVA programming language</div>
-        
+                <div class="achi">
+                    <div class="achi__img"><img class="img__achi" src="img/java-start.webp"> </div>
+                    <div class="achi__title">Java Start</div>
+                    <div class="achi_discript">I completed a sprint course on JAVA by completing all the homework for
+                        100 points and received a great baggage of basic knowledge of the JAVA programming language
+                    </div>
+
+                </div>
+                <div class="achi">
+                    <div class="achi__img"><img class="img__achi" src="img/js-start.webp"></div>
+                    <div class="achi__title">JavaScript Start</div>
+                    <div class="achi_discript">It was an interesting course to learn JavaScript, here I started to
+                        interact with a browser and a web page using JS for the first time</div>
+
+                </div>
+                <div class="achi">
+                    <div class="achi__img"><img class="img__achi" src="img/front-end-start.webp"></div>
+                    <div class="achi__title">Front-End Start</div>
+                    <div class="achi_discript">A very interesting course, I fell in love with it from the first lesson,
+                        it's so great to learn and create something new and interesting. After completing the courses, I
+                        created the first one-page website</div>
+
+                </div>
+                <div class="achi">
+                    <div class="achi__img"><img class="img__achi" src="img/front-end-pro.webp"></div>
+                    <div class="achi__title">Front-End Pro</div>
+                    <div class="achi_discript">This course is more difficult but no less interesting than that. We study
+                        JS in great detail, its capabilities and where it is used</div>
+                </div>
             </div>
-            <div class="achi">
-                <div class="achi__img"><img class="img__achi" src="img/js-start.webp"></div>
-                <div class="achi__title">JavaScript Start</div>
-                <div class="achi_discript">It was an interesting course to learn JavaScript, here I started to interact with a browser and a web page using JS for the first time</div>
-        
+        </section>
+        <footer class="propose">
+            <div class="fone">
+                <div class="propose__text">
+                    <div class="propose__title">Any Propositions?</div>
+                    <div class="propose__discript">Complete the form below and let's have a talk on your project!</div>
+                </div>
+                <div class="propose__cont">
+                    <input type="text" class="propose__input" placeholder="Name" />
+                    <input type="tel" class="propose__input" placeholder="Your Number" />
+                    <a href="#" class="btn__propose">Contact</a>
+                </div>
             </div>
-            <div class="achi">
-                <div class="achi__img"><img class="img__achi" src="img/front-end-start.webp"></div>
-                <div class="achi__title">Front-End Start</div>
-                <div class="achi_discript">A very interesting course, I fell in love with it from the first lesson, it's so great to learn and create something new and interesting. After completing the courses, I created the first one-page website</div>
-        
-            </div>
-            <div class="achi">
-                <div class="achi__img"><img class="img__achi" src="img/front-end-pro.webp"></div>
-                <div class="achi__title">Front-End Pro</div>
-                <div class="achi_discript">This course is more difficult but no less interesting than that. We study JS in great detail, its capabilities and where it is used</div>
-            </div>
-        </div>
+            <div class="footer">
+                <div class="footer__title" id="OE">Oleksiy Ermantraut</div>
+                <div class="footer__link">
+                    <div class="menu__F">
+                        <ul class="menu__listF">
+                            <li class="menu__itemF">
+                                <a href="index.html" id="am" class="menu__linkF">About Me</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="index.html" id="sk" class="menu__linkF">Skills</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="index.html" id="pr" class="menu__linkF">Project</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="index.html" id="exp" class="menu__linkF">Experience</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="index.html" id="ac" class="menu__linkF">Achievements</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__soc">
+                        <ul class="menu__socULF">
+                            <li class="menu__soc">
+                                <a href="index.html" class="menu__link">
+                                    <img src="img/linkedin.svg" class="menu__logoF" /></a>
+                            </li>
+                            <li class="menu__soc">
+                                <a href="index.html" class="menu__link">
+                                    <img src="img/github.svg" class="menu__logoF" /></a>
+                            </li>
+                            <li class="menu__soc">
+                                <a href="index.html" class="menu__link">
+                                    <img src="img/facebook.svg" class="menu__logoF" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="C">
+                        <div class="footer__c1">© Created by Oleksiy Ermantraut</div>
+                        <div class="footer__c2">All rights Reserved</div>
+
+                    </div>
+                </div>
+        </footer>
         </section>
     </main>
 </body>
