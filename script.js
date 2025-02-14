@@ -1,52 +1,3 @@
-const form = document.getElementById('contactForm');
-
-form.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const formData = new FormData(form);
-    const data = {
-        name: formData.get('name'),
-        text: formData.get('text')
-    };
-
-    fetch('https://oeportfoliobot-f251c99c2bf1.herokuapp.com/send-message', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-    })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.text();
-        })
-        .then(data => {
-            console.log('Успіх:', data);
-        })
-        .catch(error => {
-            console.error('Помилка:', error);
-        });
-});
-// 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 let siteName = 'Portfolio OE';
 document.title = siteName;
@@ -145,4 +96,29 @@ lang.addEventListener('change', () => {
         }
     }
 });
+document
+    .getElementById("contactForm")
+    .addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const name =
+            document.querySelector('input[name="name"]').value;
+        const text = document.querySelector(
+            'input[name="text1"]'
+        ).value;
+        const message = document.querySelector(
+            'textarea[name="message"]'
+        ).value;
+
+        await fetch(
+            "https://papabatoshaserver-2e798d68da19.herokuapp.com/send-message",
+            {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ name, text, message }),
+            }
+        );
+        window.location.href =
+            "https://papabatosha95.github.io/Portfolio-OE/";
+    });
 
