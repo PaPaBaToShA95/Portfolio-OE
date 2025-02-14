@@ -30,7 +30,7 @@ app.post('/send-message', (req, res) => {
     if (name && text && message) {
         const formattedMessage = `Нове повідомлення з сайту:
         Ім'я: ${name}
-        Телефон або NickName: ${text}
+        Телефон: ${text}
         Повідомлення: ${message}`;
 
         bot.sendMessage(chatId, formattedMessage);
