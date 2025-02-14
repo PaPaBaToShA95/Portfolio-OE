@@ -10,7 +10,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     width: 100%;
-    font-family: "Nunito Sans", serif;
+    font-family: "Cormorant Garamond", serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-size: 24px;
@@ -95,7 +95,7 @@ input:checked+.slider:before {
 .menu__logo {
     width: 30px;
     height: 30px;
-
+border-radius: 25px;
 }
 
 .menu__hd {
@@ -131,7 +131,7 @@ input:checked+.slider:before {
 }
 
 .menu__link {
-    font-family: "Nunito Sans", serif;
+    font-family: "Cormorant Garamond", serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-size: 24px;
@@ -577,7 +577,7 @@ input:checked+.slider:before {
     color: white;
     font-size: 64px;
     font-weight: 700;
-    font-family: "Nunito Sans", serif;
+    font-family: "Cormorant Garamond", serif;
 }
 .achievements{
     display: flex;
@@ -691,6 +691,7 @@ input:checked+.slider:before {
     border: outset;
     font-size: 24px;
     padding-left: 20px;
+    font-family: "Cormorant Garamond", serif;
 }
 .btn__propose{
     width: 95%;
@@ -702,6 +703,8 @@ input:checked+.slider:before {
     color: #FFFFFF;
     text-align: center;
     line-height: 40px;
+    font-size: 22px;
+    font-weight: 700;
 }
 .fone{
     margin-top: -350px;
@@ -733,7 +736,7 @@ input:checked+.slider:before {
     margin-top: 100px;
 }
 .menu__linkF {
-    font-family: "Nunito Sans", serif;
+    font-family: "Cormorant Garamond", serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-size: 24px;
@@ -761,6 +764,7 @@ input:checked+.slider:before {
 .menu__logoF{
     width: 40px;
     filter: invert();
+    border-radius: 25px;
 }
 .C{
     display: flex;
