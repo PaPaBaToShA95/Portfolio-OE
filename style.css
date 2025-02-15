@@ -18,7 +18,7 @@ body {
     margin: 0;
     padding: 0;
     cursor: url(img/cursor.png), auto;
-    
+
 }
 
 .container {
@@ -95,7 +95,7 @@ input:checked+.slider:before {
 .menu__logo {
     width: 30px;
     height: 30px;
-border-radius: 25px;
+    border-radius: 25px;
 }
 
 .menu__hd {
@@ -332,6 +332,7 @@ border-radius: 25px;
     width: 400px;
     height: auto;
 }
+
 .img__p2 {
     width: auto;
     height: 400px;
@@ -519,7 +520,7 @@ border-radius: 25px;
     margin-top: 50px;
     gap: 30px;
     align-items: center;
-    
+
 }
 
 
@@ -536,7 +537,8 @@ border-radius: 25px;
     font-weight: 200;
     margin: 0;
 }
-.expiriens__grid{
+
+.expiriens__grid {
     display: grid;
     grid-template-columns: 500px 500px;
     gap: 20px;
@@ -544,33 +546,37 @@ border-radius: 25px;
     justify-items: center;
     gap: 100px;
 }
-.experience{    
+
+.experience {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 100px;
 }
-.expiriences{
+
+.expiriences {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 100px;
 }
-.expiriens__title{
+
+.expiriens__title {
     font-size: 50px;
     font-weight: 800;
     margin-bottom: 20px;
     color: rgb(0, 0, 0);
     text-align: center;
-    
+
 }
-.achievement{
+
+.achievement {
     display: flex;
     justify-content: center;
-    align-items: center;  
-    background: linear-gradient(45deg,#4512fc, #402e85);
+    align-items: center;
+    background: linear-gradient(45deg, #4512fc, #402e85);
     width: 95%;
     height: 400px;
     border-radius: 50px;
@@ -579,13 +585,15 @@ border-radius: 25px;
     font-weight: 700;
     font-family: "Cormorant Garamond", serif;
 }
-.achievements{
+
+.achievements {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 150px;
 }
-.achi{
+
+.achi {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -596,7 +604,8 @@ border-radius: 25px;
     border-radius: 25px;
     border: outset;
 }
-.achi__grid{
+
+.achi__grid {
     display: grid;
     grid-template-columns: 250px 250px 250px 250px;
     gap: 20px;
@@ -605,25 +614,29 @@ border-radius: 25px;
     gap: 100px;
     margin-bottom: 200px;
 }
-.img__achi{
+
+.img__achi {
     width: 65px;
     height: 65px;
 }
-.img__achi{
+
+.img__achi {
     margin-top: 15px;
     width: 65px;
     height: 65px;
     border: outset;
     border-radius: 20px;
 }
-.achi__title{
+
+.achi__title {
     font-size: 28px;
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 30px;
     color: #371dfc;
 }
-.achi_discript{
+
+.achi_discript {
     font-size: 25px;
     font-weight: 200;
     margin-bottom: 20px;
@@ -631,18 +644,20 @@ border-radius: 25px;
     text-align: center;
     padding: 0 10px 0 10px;
 }
-.propose{
+
+.propose {
     display: flex;
     flex-direction: column;
     gap: 80px;
     justify-content: center;
     margin-top: 100px;
-    background: linear-gradient(45deg,#402e85,#4512fc);
+    background: linear-gradient(45deg, #402e85, #4512fc);
     padding-top: 100px;
     margin-bottom: 0;
     height: 2hv;
 }
-.propose__text{ 
+
+.propose__text {
     margin-bottom: 20px;
     color: rgb(0, 0, 0);
     align-items: center;
@@ -653,7 +668,8 @@ border-radius: 25px;
     height: 250px;
     width: 700px;
 }
-.propose__cont{
+
+.propose__cont {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -666,7 +682,8 @@ border-radius: 25px;
     width: 400px;
     gap: 30px;
 }
-.propose__title{
+
+.propose__title {
     padding-top: 50px;
     font-size: 52px;
     font-weight: 600;
@@ -674,16 +691,18 @@ border-radius: 25px;
     color: rgb(0, 0, 0);
     text-align: left;
 }
-.propose__discript{
+
+.propose__discript {
     font-size: 26px;
     font-weight: 400;
     margin-bottom: 20px;
     height: 300px;
     text-align: left;
     padding-top: 20px;
-    
+
 }
-.propose__input{
+
+.propose__input {
     width: 95%;
     height: 40px;
     border-radius: 10px;
@@ -693,7 +712,8 @@ border-radius: 25px;
     padding-left: 20px;
     font-family: "Cormorant Garamond", serif;
 }
-.btn__propose{
+
+.btn__propose {
     width: 95%;
     height: 40px;
     text-decoration: none;
@@ -706,21 +726,24 @@ border-radius: 25px;
     font-size: 22px;
     font-weight: 700;
 }
-.fone{
+
+.fone {
     margin-top: -350px;
     display: flex;
     justify-content: center;
     padding-top: 100px;
     gap: 80px;
 }
-.footer{
+
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   text-align: center;
-    
+    text-align: center;
+
 }
+
 .menu__socULF {
     display: flex;
     align-items: center;
@@ -729,12 +752,14 @@ border-radius: 25px;
     padding-left: 0;
     justify-content: center;
 }
-.footer__title{
+
+.footer__title {
     color: #FFFFFF;
     font-size: 36px;
     font-weight: 700;
     margin-top: 100px;
 }
+
 .menu__linkF {
     font-family: "Cormorant Garamond", serif;
     font-optical-sizing: auto;
@@ -747,13 +772,15 @@ border-radius: 25px;
     align-items: center;
     gap: 5px;
 }
+
 .menu__itemF {
     display: flex;
     flex-direction: column;
     width: max-content;
     flex-wrap: nowrap;
 }
-.menu__listF{
+
+.menu__listF {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -761,15 +788,61 @@ border-radius: 25px;
     padding-left: 0;
     justify-content: center;
 }
-.menu__logoF{
+
+.menu__logoF {
     width: 40px;
     filter: invert();
     border-radius: 25px;
 }
-.C{
+
+.C {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     width: 700px;
     margin-bottom: 50px;
     color: #FFFFFF;
+}
+
+/* Основний стиль кастомного alert */
+.custom-alert {
+    display: none;
+    /* Початково ховаємо */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Напівпрозорий фон */
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.alert-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.alert-content p {
+    font-size: 28px;
+    font-weight: 200;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#closeAlert {
+    font-size: 22px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: outset;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#closeAlert:hover {
+    background-color: #0056b3;
 }

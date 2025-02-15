@@ -1,4 +1,6 @@
-
+$(document).ready(function () {
+    $('#phone').inputmask('+38 (999) 999-99-99');
+});
 let siteName = 'Portfolio OE';
 document.title = siteName;
 
@@ -110,15 +112,50 @@ document
             'textarea[name="message"]'
         ).value;
 
-        await fetch(
-            "https://papabatoshaserver-2e798d68da19.herokuapp.com/send-message",
-            {
+        try {
+            const response = await fetch("https://papabatoshaserver-2e798d68da19.herokuapp.com/send-message", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ name, text, message }),
+            });
+
+            if (response.ok) {
+                showCustomAlert(`Повідомлення надіслано`)
+                resetForm();
+            } else {
+
+                showCustomAlert('Щось пішло не так, спробуйте ще раз!');
             }
-        );
-        window.location.href =
-            "https://papabatosha95.github.io/Portfolio-OE/";
+        } catch (error) {
+            showCustomAlert('Сталася помилка при надсиланні форми!');
+        }
+
+
+
     });
+function showCustomAlert(message) {
+    const alertContainer = document.getElementById('customAlert');
+    const alertMessage = document.getElementById('alertMessage');
+    const closeBtn = document.getElementById('closeAlert');
+
+    alertMessage.textContent = message;
+
+    alertContainer.style.display = 'block';
+    setTimeout(() => {
+        alertContainer.style.display = 'none';
+    }, 5000);
+
+    closeBtn.addEventListener('click', () => {
+        alertContainer.style.display = 'none';
+    });
+}
+function resetForm() {
+    const form = document.getElementById('contactForm');
+    if (form) {
+        form.reset();
+    }
+}
+
+
+
 
