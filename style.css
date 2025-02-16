@@ -174,6 +174,7 @@ input:checked+.slider:before {
 }
 
 .aboutme__div {
+
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -181,6 +182,7 @@ input:checked+.slider:before {
     width: 100%;
     padding: 0 0 0 0;
     margin: 20px;
+    margin-bottom: 160px;
 }
 
 .aboutme__title {
@@ -193,6 +195,7 @@ input:checked+.slider:before {
     font-weight: 200;
     text-align: center;
     width: 70%;
+    height: 200px;
 }
 
 .skill__title {
@@ -251,7 +254,7 @@ input:checked+.slider:before {
     margin-bottom: 20px;
 }
 
-.highlight {
+.highlights {
     color: #371dfc;
     font-weight: 400;
 }
@@ -845,4 +848,185 @@ input:checked+.slider:before {
 
 #closeAlert:hover {
     background-color: #0056b3;
+}
+
+/* Основний стиль для тексту */
+.fade-out,
+.fade-in {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+    /* При зникненні прозорість стає 0 */
+}
+
+.fade-in {
+    opacity: 1;
+    /* При появі прозорість стає 1 */
+}
+
+/* Стиль для тексту, що нагадує табло поїзда */
+@keyframes flip {
+    0% {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+
+    50% {
+        transform: rotateX(180deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotateX(360deg);
+        opacity: 1;
+    }
+}
+
+.flip-out {
+    animation: flip 0.5s forwards;
+}
+
+.flip-in {
+    animation: flip 0.5s forwards;
+}
+
+.letter {
+    display: inline-block;
+    transition: all 0.4s ease;
+}
+
+.letter.checked {
+    border: 1px solid #000;
+    /* Прямокутна рамка */
+    padding: 2px;
+    margin: 0 1px;
+    transform: scale(1.1);
+    /* Легка трансформація при додаванні рамки */
+}
+
+.letter.space {
+    width: 10px;
+    /* Ширина порожнього прямокутника */
+    height: 20px;
+    /* Висота порожнього прямокутника */
+    display: inline-block;
+    border: 1px solid #000;
+    /* Рамка для пробілу */
+    margin: 0 2px;
+}
+
+.letter {
+    display: inline-block;
+    transition: all 0.4s ease;
+}
+
+.letter.checked {
+    border: 1px solid #000;
+    /* Прямокутна рамка */
+    padding: 2px;
+    margin: 0 1px;
+    transform: scale(1.1);
+    /* Легка трансформація при додаванні рамки */
+}
+
+.letter.space {
+    width: 10px;
+    /* Ширина порожнього прямокутника */
+    display: inline-block;
+    border: 1px solid #000;
+    /* Рамка для пробілу */
+    margin: 0 2px;
+    height: 20px;
+    /* Стандартна висота */
+    vertical-align: middle;
+    /* Вирівнювання по центру для пробілів */
+}
+
+.flip-out {
+    animation: flipOut 0.4s forwards;
+}
+
+.flip-in {
+    animation: flipIn 0.4s forwards;
+}
+
+@keyframes flipOut {
+    0% {
+        transform: rotateX(0);
+    }
+
+    100% {
+        transform: rotateX(90deg);
+    }
+}
+
+@keyframes flipIn {
+    0% {
+        transform: rotateX(90deg);
+    }
+
+    100% {
+        transform: rotateX(0);
+    }
+}
+
+/* Анімація перевороту для зміни тексту */
+.flip-out {
+    animation: flipOut 0.4s forwards;
+    transform-origin: center;
+}
+
+@keyframes flipOut {
+    0% {
+        transform: rotateX(0);
+    }
+
+    100% {
+        transform: rotateX(90deg);
+    }
+}
+
+/* Анімація появи з підсвічуванням */
+.highlight {
+    animation: highlight 0.8s forwards;
+}
+
+@keyframes highlight {
+    0% {
+        background-color: rgb(0, 153, 255);
+        /* Початкове підсвічування */
+        color: black;
+        border-radius: 20px;
+        padding: 5px;
+    }
+
+    100% {
+        background-color: transparent;
+        /* Поступове зникнення підсвічування */
+        color: inherit;
+        border-radius: 20px;
+        padding: 5px;
+    }
+}
+
+/* Анімація зникнення тексту */
+.fade-out {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+/* Анімація появи нового тексту */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.fade-in {
+    opacity: 1;
 }
