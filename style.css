@@ -281,6 +281,7 @@ input:checked+.slider:before {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 110px;
 }
 
 .skill {
@@ -1031,4 +1032,27 @@ input:checked+.slider:before {
 
 .fade-in {
     opacity: 1;
+}
+
+.menu__item:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+    transition: transform 0.3s ease-in-out;
+    color: #371dfc;
+
+}
+
+.menu__link:hover {
+    color: #371dfc;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu__soc:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn__cv:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+    transition: transform 0.3s ease-in-out;
+    border: outset;
 }

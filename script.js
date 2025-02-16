@@ -1,4 +1,4 @@
-
+const html = document.getElementById('html');
 
 
 
@@ -90,6 +90,7 @@ lang.addEventListener('change', () => {
         numberInput.placeholder = "Ваш номер";
         const messageInput = document.getElementById('message');
         messageInput.placeholder = "Ваше повідомлення";
+        html.setAttribute('lang', 'uk');
     }
     else {
         sessionStorage.setItem('langState', 'false');
@@ -153,6 +154,7 @@ lang.addEventListener('change', () => {
         numberInput.placeholder = "Your number";
         const messageInput = document.getElementById('message');
         messageInput.placeholder = "Your message";
+        html.setAttribute('lang', 'en');
     }
 }
 );
