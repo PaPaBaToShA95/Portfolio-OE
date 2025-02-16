@@ -2,6 +2,7 @@ html {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
+    font-family: "Cormorant Garamond", serif;
 }
 
 body {
@@ -717,6 +718,7 @@ input:checked+.slider:before {
 }
 
 .btn__propose {
+    font-family: "Cormorant Garamond", serif;
     width: 95%;
     height: 40px;
     text-decoration: none;
