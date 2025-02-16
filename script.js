@@ -1,10 +1,14 @@
+
+
+
+
 $(document).ready(function () {
     $('#phone').inputmask('+38 (999) 999-99-99');
 });
 let siteName = 'Portfolio OE';
 document.title = siteName;
 
-
+const lang = document.getElementById('lang');
 function changeTextWithOpacity(elementId, newText) {
     const element = document.getElementById(elementId);
 
@@ -45,11 +49,18 @@ lang.addEventListener('change', () => {
         changeTextWithOpacity('ttt_v', 'Переглянути проект');
         changeTextWithOpacity('ttt_t', 'Спробувати');
         changeTextWithOpacity('whirl__des', '«Whirl» — це веб-сайт, який я розробив у рамках свого екзаменаційного проекту, використовуючи HTML, CSS і JavaScript. Сайт має плавну анімацію, адаптивний дизайн та інтерактивні елементи. Цей проект отримав високу оцінку за рівень складності та якості, демонструючи моє сильне розуміння інтерфейсної розробки на поточному етапі навчання.');
-        changeTextWithOpacity('exp', 'Досвід');
-        changeTextWithOpacity('exp', 'Досвід');
-        changeTextWithOpacity('exp', 'Досвід');
+        changeTextWithOpacity('whirl_v', 'Переглянути проект');
+        changeTextWithOpacity('whirl_l', 'Переглянути');
+        changeTextWithOpacity('calt', 'Календар для схуднення');
+        changeTextWithOpacity('cal__desclass', 'Календар схуднення – це веб-додаток, розроблений, щоб допомогти користувачам відстежувати свій шлях до схуднення з часом. Програма, створена з використанням HTML, CSS і JavaScript, дозволяє користувачам реєструвати свою вагу, встановлювати цілі та переглядати прогрес в інтерфейсі календаря. Інтуїтивно зрозумілий дизайн полегшує використання, а додаток допомагає користувачам залишатися мотивованими, візуалізуючи їхній прогрес. Цей проект демонструє практичні навички розробки інтерфейсу та був добре сприйнятий за його простоту та ефективність у наданні корисного інструменту.');
+        changeTextWithOpacity('cal_v', 'Переглянути проект');
+        changeTextWithOpacity('cal_l', 'Спробувати');
+        changeTextWithOpacity('interest__title', 'Зацікавлені у спільній роботі?');
+        changeTextWithOpacity('interest__description', 'Ви можете довірити свій проект моїм експертним рукам. Мені завжди хочеться зробити щось приємне і складне. Давайте обговоримо всі особливості в приватній розмові.');
+        changeTextWithOpacity('contact__btn', 'Зв’язатися зі мною');
     }
     else {
+        sessionStorage.setItem('langState', 'false');
         changeTextWithOpacity('am', 'About Me');
         changeTextWithOpacity('sk', 'Skills');
         changeTextWithOpacity('pr', 'Project');
@@ -69,9 +80,15 @@ lang.addEventListener('change', () => {
         changeTextWithOpacity('ttt_v', 'View Project');
         changeTextWithOpacity('ttt_t', 'Try');
         changeTextWithOpacity('whirl__des', '"Whirl" is a website I developed as part of my exam project, using HTML, CSS, and JavaScript. The site features smooth animations, responsive design, and interactive elements. This project was highly praised for its level of complexity and quality, showcasing my strong grasp of front-end development at my current stage of learning.');
-        changeTextWithOpacity('exp', 'Досвід');
-        changeTextWithOpacity('exp', 'Досвід');
-        changeTextWithOpacity('exp', 'Досвід');
+        changeTextWithOpacity('whirl_v', 'View Project');
+        changeTextWithOpacity('whirl_l', 'Look');
+        changeTextWithOpacity('calt', 'The Weight Loss Calendar');
+        changeTextWithOpacity('cal__desclass', 'The Weight Loss Calendar is a web application designed to help users track their weight loss journey over time.Built using HTML, CSS, and JavaScript, the app allows users to log their weight, set goals, and view progress on a calendar interface.The intuitive design makes it easy to use, and the app helps users stay motivated by visualizing their progress.This project showcases practical skills in front - end development and was well - received for its simplicity and effectiveness in delivering a useful tool.');
+        changeTextWithOpacity('cal_v', 'View Project');
+        changeTextWithOpacity('cal_l', 'Try');
+        changeTextWithOpacity('interest__title', 'Interested in working together?');
+        changeTextWithOpacity('interest__description', 'You can trust your project in my expert hands. I`m always eager to do something nice and complicated.Let`s discuss all the features in a private conversation.');
+        changeTextWithOpacity('contact__btn', 'Contact Me');
     }
 }
 );
@@ -134,6 +151,7 @@ function resetForm() {
         form.reset();
     }
 }
+
 
 
 
