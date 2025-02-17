@@ -1051,8 +1051,76 @@ input:checked+.slider:before {
     transition: transform 0.3s ease-in-out;
 }
 
-.btn__cv:hover {
+#mcv:hover {
     transform: scale3d(1.1, 1.1, 1.1);
     transition: transform 0.3s ease-in-out;
     border: outset;
+}
+
+#ttt_v:hover {
+    background-color: #007bff;
+    transition: 1000ms;
+    border-radius: 50px;
+    color: #333;
+}
+
+#ttt_t:hover {
+    background-color: #007bff;
+    transition: 1000ms;
+    border-radius: 50px;
+    color: #333;
+}
+
+#whirl_v:hover {
+    background-color: rgb(255, 221, 0);
+    transition: 1000ms;
+    border-radius: 50px;
+    color: #535353;
+}
+
+#whirl_l:hover {
+    background-color: rgb(255, 221, 0);
+    transition: 1000ms;
+    border-radius: 50px;
+    color: #535353;
+}
+
+#cal_v:hover {
+    background-color: #007bff;
+    transition: 1000ms;
+    border-radius: 50px;
+    color: #333;
+}
+
+#cal_l:hover {
+    background-color: #007bff;
+    transition: 1000ms;
+    border-radius: 50px;
+    color: #333;
+}
+
+#contact__btn:hover {
+    background-color: #007bff;
+    transition: 1000ms;
+    border-radius: 50px;
+    color: #333;
+}
+
+#propose__btn2:hover {
+    background-color: #007bff;
+    transition: 1000ms;
+    border-radius: 50px;
+    color: #333;
+}
+
+.menu__itemF:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+    transition: transform 0.3s ease-in-out;
+    color: #371dfc;
+}
+
+.menu__linkF:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+    transition: transform 0.3s ease-in-out;
+    color: #000000;
 }
