@@ -217,5 +217,15 @@ function resetForm() {
         form.reset();
     }
 }
+// Отримуємо елементи для кнопки гамбургер і контейнера меню
+const hamburgerMenu = document.getElementById('hamburgerMenu');
+const menuHd = document.querySelector('.menu__hd');
+
+// Додаємо обробник події для натискання на гамбургер
+hamburgerMenu.addEventListener('click', () => {
+    // Додаємо або прибираємо клас 'open' при натисканні
+    menuHd.classList.toggle('open');
+});
+
 
 
