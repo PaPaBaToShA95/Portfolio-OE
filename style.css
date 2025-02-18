@@ -411,6 +411,8 @@ input:checked+.slider:before {
 }
 
 .projectm__title {
+    text-align: center;
+    text-wrap: wrap;
     font-size: 36px;
     font-weight: 700;
     margin-top: 20px;
@@ -763,7 +765,7 @@ input:checked+.slider:before {
 
 .propose__input {
     width: 95%;
-    height: 40px;
+    height: -webkit-fill-available;
     border-radius: 10px;
     background-color: aliceblue;
     border: outset;
@@ -1444,6 +1446,7 @@ input:checked+.slider:before {
         .aboutme__description {
             height: auto;
             margin-top: 50px;
+            width: auto;
         }
 
         html {
@@ -1474,7 +1477,17 @@ input:checked+.slider:before {
         .expiriens__grid {
             width: 99%;
         }
+
+        .interest__description {
+            width: 90%;
+        }
+
+        .item__description {
+            width: 90%;
+        }
+
+        .achi__title {
+            font-size: 32px;
+        }
     }
-
-
 }
