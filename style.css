@@ -1414,6 +1414,8 @@ input:checked+.slider:before {
         .projects__firstline {
             justify-content: center;
             margin-top: 100px;
+            margin-left: 0;
+            margin-right: 0;
         }
 
         .project__description {
@@ -1432,6 +1434,8 @@ input:checked+.slider:before {
         .projects__secondline {
             justify-content: center;
             margin-top: 100px;
+            margin-left: 0;
+            margin-right: 0;
         }
 
         .project__description2 {
