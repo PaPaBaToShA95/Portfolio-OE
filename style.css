@@ -1497,5 +1497,17 @@ input:checked+.slider:before {
         .propose__cont {
             height: max-content;
         }
+
+        .btn__div {
+            gap: 30px;
+        }
+
+        .btn__div2 {
+            gap: 30px;
+        }
+
+        .btn__div3 {
+            gap: 30px;
+        }
     }
 }
