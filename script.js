@@ -1,5 +1,5 @@
 const html = document.getElementById('html');
-
+const mess = `Message sent successfully!`
 
 
 $(document).ready(function () {
@@ -90,6 +90,9 @@ lang.addEventListener('change', () => {
         changeTextWithOpacity('exp2', 'Досвід');
         changeTextWithOpacity('ac2', 'Досягення');
         changeTextWithOpacity('propose__btn2', 'Зв’язатися зі мною');
+        changeTextWithOpacity('cont', 'Зв’язатись');
+        changeTextWithOpacity('closeAlert', 'Закрити');
+        mess = `Ваше повідомлення відправлено!`;
         const nameInput = document.getElementById('name');
         nameInput.placeholder = "Ваше ім'я";
         const numberInput = document.getElementById('phone');
@@ -159,6 +162,9 @@ lang.addEventListener('change', () => {
         changeTextWithOpacity('exp2', 'Experience');
         changeTextWithOpacity('ac2', 'Achievements');
         changeTextWithOpacity('propose__btn2', 'Contact');
+        changeTextWithOpacity('contmob', 'Contact');
+        changeTextWithOpacity('closeAlert', 'Close');
+        mess = `Message sent successfully!`
         const nameInput = document.getElementById('name');
         nameInput.placeholder = "Your name";
         const numberInput = document.getElementById('phone');
@@ -230,6 +236,9 @@ langmob.addEventListener('change', () => {
         changeTextWithOpacity('exp2', 'Досвід');
         changeTextWithOpacity('ac2', 'Досягення');
         changeTextWithOpacity('propose__btn2', 'Зв’язатися зі мною');
+        changeTextWithOpacity('contmob', 'Зв’язатись');
+        changeTextWithOpacity('closeAlert', 'Закрити');
+        mess = `Повідомлення успішно відправлено!`
         const nameInput = document.getElementById('name');
         nameInput.placeholder = "Ваше ім'я";
         const numberInput = document.getElementById('phone');
@@ -299,6 +308,9 @@ langmob.addEventListener('change', () => {
         changeTextWithOpacity('exp2', 'Experience');
         changeTextWithOpacity('ac2', 'Achievements');
         changeTextWithOpacity('propose__btn2', 'Contact');
+        changeTextWithOpacity('contmob', 'Contact');
+        changeTextWithOpacity('closeAlert', 'Close');
+        mess = `Message sent successfully!`
         const nameInput = document.getElementById('name');
         nameInput.placeholder = "Your name";
         const numberInput = document.getElementById('phone');
@@ -333,7 +345,7 @@ document
             });
 
             if (response.ok) {
-                showCustomAlert(`Повідомлення надіслано`)
+                showCustomAlert(`${mess}`);
                 resetForm();
             } else {
 
@@ -417,7 +429,58 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-
+document.getElementById("ammob").addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("about__meid").scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("am").addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("about__meid").scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("skmob").addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("skillid").scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("sk").addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("skillid").scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("prmob").addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("projectid").scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("pr").addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("projectid").scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("expmob").addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("experienceid").scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("exp").addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("experienceid").scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("acmob").addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("achievementsid").scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("ac").addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("achievementsid").scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("contmob").addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("contactid").scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("cont").addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("contactid").scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("contact__btn").addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("contactid").scrollIntoView({ behavior: "smooth" });
+});
 
 
 

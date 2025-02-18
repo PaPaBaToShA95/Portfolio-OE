@@ -497,6 +497,7 @@ input:checked+.slider:before {
 }
 
 .interesting {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -707,6 +708,7 @@ input:checked+.slider:before {
 }
 
 .propose {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 80px;
@@ -1155,6 +1157,10 @@ input:checked+.slider:before {
     transition: 1000ms;
     border-radius: 50px;
     color: #333;
+}
+
+.interest {
+    width: 100%;
 }
 
 #cal_l:hover {
