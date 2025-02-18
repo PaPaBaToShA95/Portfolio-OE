@@ -19,7 +19,14 @@ body {
     margin: 0;
     padding: 0;
     cursor: url(img/cursor.png), 10px 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 
+}
+
+.closeIcon {
+    display: none;
 }
 
 .container {
@@ -101,12 +108,30 @@ input:checked+.slider:before {
 
 .menu__hd {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-left: auto;
+}
+
+.menu__hdpc {
+    display: flex;
     gap: 20px;
     align-items: center;
     margin-left: auto;
 }
 
 .menu__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.menu__listpc {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -116,6 +141,14 @@ input:checked+.slider:before {
 }
 
 .menu__socUL {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu__socULpc {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -1177,100 +1210,259 @@ input:checked+.slider:before {
     transition: filter 0.3 ease;
 }
 
-/* Стилі для гамбургер-меню */
-.hamburger-menu {
-    display: none;
-    /* Спочатку приховуємо гамбургер */
+.hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: black solid 1px;
+    background: white;
     cursor: pointer;
-    width: 30px;
-    height: 25px;
-    position: relative;
 }
 
-.hamburger-icon,
-.hamburger-icon::before,
-.hamburger-icon::after {
-    background-color: #333;
-    height: 4px;
-    width: 100%;
-    position: absolute;
-    transition: transform 0.3s ease-in-out;
+.closeIcon {
+    display: none;
 }
 
-.hamburger-icon {
+.menu__hd {
+    width: 300px;
+    height: fit-content;
+    border: solid 10px #007bff5a;
+    border-radius: 15px;
+    position: fixed;
+    transform: translateX(100%);
+    transition: transform 1s;
     top: 0;
-}
-
-.hamburger-icon::before {
-    content: "";
-    top: -8px;
-}
-
-.hamburger-icon::after {
-    content: "";
-    top: 8px;
-}
-
-/* Стилі для меню на великих екранах */
-.menu__list,
-.menu__socUL {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: white;
+    color: black;
     list-style: none;
+    padding-top: 4rem;
+}
+
+.showMenu {
+    transform: translateY(0);
+}
+
+.hamburger {
+    display: none;
+}
+
+.langbtn {
     display: flex;
-    gap: 20px;
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
-/* Стилі для прихованого меню на маленьких екранах */
-@media (max-width: 1200px) {
-
-    .menu__list,
-    .menu__socUL {
-        display: none;
-        /* Спочатку приховуємо меню */
-        position: absolute;
-        top: 50px;
-        left: 0;
-        background-color: white;
-        width: 100%;
-        border-top: 1px solid #ddd;
-        padding: 10px 0;
-    }
-
-    .hamburger-menu {
+@media screen and (max-width: 1200px) {
+    .hamburger {
         display: block;
-        /* Показуємо гамбургер-меню */
-    }
-}
-
-/* Анімація для меню, яке відкривається */
-.menu__hd.open .menu__list,
-.menu__hd.open .menu__socUL {
-    display: block;
-    transform: translateX(0);
-    animation: slideIn 0.5s ease-out forwards;
-}
-
-/* Анімація для гамбургер-меню */
-.menu__hd.open .hamburger-icon {
-    transform: rotate(45deg);
-}
-
-.menu__hd.open .hamburger-icon::before {
-    transform: rotate(90deg);
-    top: 0;
-}
-
-.menu__hd.open .hamburger-icon::after {
-    transform: rotate(90deg);
-    top: 0;
-}
-
-/* Анімація для меню, яке виїжджає */
-@keyframes slideIn {
-    from {
-        transform: translateX(100%);
+        margin-top: 25px;
+        margin-right: 10px;
     }
 
-    to {
-        transform: translateX(0);
+    .pcversion {
+        display: none;
     }
-}
+
+    /* .logo__svg {
+        margin-left: 50px;
+    } */
+
+    .container {
+        width: 90%;
+    }
+
+    .skill__module {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .project__img {
+        display: none;
+    }
+
+    .project__img2 {
+        display: none;
+    }
+
+    .img__p {
+        width: 90%;
+        height: auto%;
+    }
+
+    .projects__firstline {
+        margin: 0 20px 0 20px;
+    }
+
+    .projects__secondline {
+        margin: 50px 20px 0 20px;
+    }
+
+    .projects {
+        width: 95%;
+    }
+
+    .expiriens__grid {
+        flex-wrap: wrap;
+        grid-template-columns: 90%;
+    }
+
+    .achi__grid {
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+    }
+
+    .achievements {
+        width: 100%;
+    }
+
+    .fone {
+        flex-wrap: wrap;
+    }
+
+    .propose__text {
+        width: 80%;
+    }
+
+    .propose__cont {
+        width: 80%;
+    }
+
+    .achi {
+        z-index: 1;
+    }
+
+    .module {
+        z-index: 1;
+    }
+
+    .propose {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 600px) {
+        .menu__hd {
+            width: 100%;
+        }
+
+        .logo__svg {
+            margin-left: 25px;
+        }
+
+        .achi__grid {
+            grid-template-columns: 70%;
+        }
+
+        .menu__listF {
+            flex-direction: column;
+        }
+
+        .C {
+            flex-direction: column;
+        }
+
+        .project__description {
+            width: 70%;
+        }
+
+        .project__description2 {
+            width: 70%;
+        }
+
+        body {
+            width: 100%;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .expiriens__grid {
+            grid-template-columns: 60%;
+            justify-content: center;
+        }
+
+        .experience__item {
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 150%;
+        }
+
+        .achievement {
+            width: 100%;
+        }
+
+        .propose__discript {
+            height: auto;
+        }
+
+        .propose__text {
+            height: auto;
+        }
+
+        .interest__title {
+            width: 90%;
+        }
+
+        .projects__firstline {
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        .project__description {
+            width: 98%;
+            height: auto;
+        }
+
+        .btn__cv {
+            font-size: large;
+        }
+
+        .btn__cv2 {
+            font-size: large;
+        }
+
+        .projects__secondline {
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        .project__description2 {
+            width: 98%;
+            height: auto;
+        }
+
+        .aboutme__div {
+            height: auto;
+        }
+
+        .aboutme__description {
+            height: auto;
+            margin-top: 50px;
+        }
+
+        html {
+            width: 100%;
+        }
+
+        .footer__link {
+            width: 100%;
+        }
+
+        .footer__c1 {
+            width: 100%;
+        }
+
+        .footer__c2 {
+            width: 100%;
+        }
+
+        .C {
+            width: 100%;
+        }
+    }

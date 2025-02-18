@@ -23,6 +23,8 @@
     <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.6/dist/jquery.inputmask.min.js"></script>
     <script src="script.js" defer></script>
     <link rel="icon" href="img/logo.svg" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
     <title></title>
 </head>
@@ -34,25 +36,65 @@
                 <a href="index.html">
                     <img src="img/logo.svg" alt="logo" class="logo__svg" />
             </div>
-            <div class="menu__hd">
-                <div class="hamburger-menu" id="hamburgerMenu">
-                    <div class="hamburger-icon"></div>
+            <div class="pcversion">
+                <div class="menu__hdpc">
+                    <ul class="menu__listpc">
+                        <li class="menu__item">
+                            <a href="index.html" id="am" class="menu__link">About Me</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="index.html" id="sk" class="menu__link">Skills</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="index.html" id="pr" class="menu__link">Project</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="index.html" id="exp" class="menu__link">Experience</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="index.html" id="ac" class="menu__link">Achievements</a>
+                        </li>
+                    </ul>
+                    <ul class="menu__socULpc">
+                        <li class="menu__soc">
+                            <a href="https://linkedin.com/in/oleksiyermantraut" class="menu__link">
+                                <img id="lin" src="img/linkedin.svg" class="menu__logo" /></a>
+                        </li>
+                        <li class="menu__soc">
+                            <a href="https://github.com/PaPaBaToShA95" class="menu__link">
+                                <img src="img/github.svg" class="menu__logo" /></a>
+                        </li>
+                        <li class="menu__soc">
+                            <a href="https://t.me/PaPaBaToShA" class="menu__link">
+                                <img id="teleg" src="img/telegram.svg" class="menu__logo" /></a>
+                        </li>
+                    </ul>
+                    <span class="menu__link">EN</span>
+                    <label class="switch">
+                        <input id="lang" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="menu__link">UA</span>
                 </div>
+            </div>
+        </div>
+        <div class="pc">
+            <div class="menu__hd">
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a href="index.html" id="am" class="menu__link">About Me</a>
+                        <a href="index.html" id="ammob" class="menu__link">About Me</a>
                     </li>
                     <li class="menu__item">
-                        <a href="index.html" id="sk" class="menu__link">Skills</a>
+                        <a href="index.html" id="skmob" class="menu__link">Skills</a>
                     </li>
                     <li class="menu__item">
-                        <a href="index.html" id="pr" class="menu__link">Project</a>
+                        <a href="index.html" id="prmob" class="menu__link">Project</a>
                     </li>
                     <li class="menu__item">
-                        <a href="index.html" id="exp" class="menu__link">Experience</a>
+                        <a href="index.html" id="expmob" class="menu__link">Experience</a>
                     </li>
                     <li class="menu__item">
-                        <a href="index.html" id="ac" class="menu__link">Achievements</a>
+                        <a href="index.html" id="acmob" class="menu__link">Achievements</a>
                     </li>
                 </ul>
                 <ul class="menu__socUL">
@@ -69,14 +111,22 @@
                             <img id="teleg" src="img/telegram.svg" class="menu__logo" /></a>
                     </li>
                 </ul>
-                <span class="menu__link">EN</span>
-                <label class="switch">
-                    <input id="lang" type="checkbox">
-                    <span class="slider round"></span>
-                </label>
-                <span class="menu__link">UA</span>
+                <div class="langbtn">
+                    <span class="menu__link">EN</span>
+                    <label class="switch">
+                        <input id="langmob" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="menu__link">UA</span>
+                </div>
+
             </div>
         </div>
+
+        <button class="hamburger">
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i>
+        </button>
     </header>
     <main class="main">
         <section class="about__me ">
