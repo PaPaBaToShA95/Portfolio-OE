@@ -1292,7 +1292,7 @@ input:checked+.slider:before {
 
     .img__p {
         width: 90%;
-        height: auto%;
+        height: auto;
     }
 
     .projects__firstline {
@@ -1465,4 +1465,16 @@ input:checked+.slider:before {
         .C {
             width: 100%;
         }
+
+        .menu__hd {
+            width: 70%;
+            height: fit-content;
+        }
+
+        .expiriens__grid {
+            width: 99%;
+        }
     }
+
+
+}
