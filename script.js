@@ -484,3 +484,23 @@ document.getElementById("contact__btn").addEventListener("click", function (even
 
 
 
+document.getElementById("am2").addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("about__meid").scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("sk2").addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("skillid").scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("pr2").addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("projectid").scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("exp2").addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("experienceid").scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("ac2").addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("achievementsid").scrollIntoView({ behavior: "smooth" });
+});
