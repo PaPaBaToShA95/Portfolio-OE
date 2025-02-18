@@ -1489,5 +1489,13 @@ input:checked+.slider:before {
         .achi__title {
             font-size: 32px;
         }
+
+        .propose__input {
+            height: 50px;
+        }
+
+        .propose__cont {
+            height: max-content;
+        }
     }
 }
