@@ -504,3 +504,5 @@ document.getElementById("ac2").addEventListener("click", function (event) {
     event.preventDefault();
     document.getElementById("achievementsid").scrollIntoView({ behavior: "smooth" });
 });
+
+
